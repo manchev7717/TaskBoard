@@ -84,6 +84,6 @@ jobs:
 
     # Validate terraform files
     - name: Terraform Validate
-      run: terraform validate -input=false
+      run: terraform validate 
 
      
