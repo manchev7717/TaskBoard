@@ -9,7 +9,7 @@ terraform {
     resource_group_name  = "StorageFafli" 
     storage_account_name = "accountforstoragee"                     
     container_name       = "containercashee"                      
-    key                  = "gluposti.tfstate"       
+    key                  = ".tfstate"       
   }
 
 
