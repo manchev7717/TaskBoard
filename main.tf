@@ -5,12 +5,6 @@ terraform {
       version = "4.12.0"
     }
   }
-backend "azurerm" {
-    resource_group_name   = "StorageRGNMM"
-    storage_account_name  = "taskboardstorage"
-    container_name        = "storagecontainer"
-    key                    = "terraform.tfstate" # Name of the state file
-  }
 }
 resource "azurerm_resource_group" "manchevrg" {
   name     = "${var.resource_group_name}${random_integer.random_integer_nm.result}"
