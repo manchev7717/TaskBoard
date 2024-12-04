@@ -10,10 +10,10 @@ permissions:
   contents: read
   
 env: 
-  AZURE_CLIENT_ID: ${{ secret.AZURE_CLIENT_ID }}
-  AZURE_CLIENT_SECRET: ${{ secret.AZURE_CLIENT_SECRET }}
-  AZURE_SUBSRIPTION_ID: ${{ secret.AZURE_SUBSRIPTION_ID }}
-  AZURE_TENANT_ID: ${{ secret.AZURE_TENANT_ID }}
+  AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+  AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+  AZURE_SUBSRIPTION_ID: ${{ secrets.AZURE_SUBSRIPTION_ID }}
+  AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
 jobs:
   terraform-plan:
