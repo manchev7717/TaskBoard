@@ -6,13 +6,11 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "StorageFafli" 
-    storage_account_name = "accountforstoragee"                     
-    container_name       = "containercashee"                      
-    key                  = ".tfstate"       
+    resource_group_name  = "StorageFafli"
+    storage_account_name = "accountforstoragee"
+    container_name       = "containercashee"
+    key                  = ".tfstate"
   }
-
-
 }
 resource "azurerm_resource_group" "manchevrg" {
   name     = "${var.resource_group_name}${random_integer.random_integer_nm.result}"
